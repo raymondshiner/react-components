@@ -1,7 +1,13 @@
 {
-  "name": "react-components",
+  "name": "@rshiner/react-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.4",
@@ -13,10 +19,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "rollup -c",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -49,13 +52,19 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
+    "node-sass": "^6.0.0",
     "prop-types": "^15.7.2",
+    "rollup": "^2.51.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
     "storybook-addon-material-ui": "^0.9.0-alpha.24"
   }
 }
