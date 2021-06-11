@@ -1,13 +1,12 @@
 import { Button } from "@material-ui/core";
-import { purple } from "@material-ui/core/colors";
 import { withStyles } from "@material-ui/styles";
 
 const ColorButton = withStyles((theme) => ({
   root: {
     color: "white",
-    backgroundColor: purple[500],
+    backgroundColor: "red",
     "&:hover": {
-      backgroundColor: purple[700],
+      backgroundColor: "black",
     },
   },
 }))(Button);
