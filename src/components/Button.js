@@ -1,14 +1,20 @@
 import { Button } from "@material-ui/core";
+import { purple } from "@material-ui/core/colors";
 import { withStyles } from "@material-ui/styles";
 
-const StyledButton = withStyles((theme) => ({
-  background: "purple",
-  color: "white",
+const ColorButton = withStyles((theme) => ({
+  root: {
+    color: "white",
+    backgroundColor: purple[500],
+    "&:hover": {
+      backgroundColor: purple[700],
+    },
+  },
 }))(Button);
 
-export default StyledButton;
+export default ColorButton;
 
-StyledButton.defaultProps = {
+ColorButton.defaultProps = {
   variant: "contained",
   color: "primary",
 };
