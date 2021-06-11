@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/styles";
 
 const StyledButton = withStyles((theme) => ({
   root: {
-    color: theme.palette.getContrastText(purple[500]),
+    color: "white",
     backgroundColor: purple[500],
     "&:hover": {
       backgroundColor: purple[700],
