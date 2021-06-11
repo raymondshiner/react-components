@@ -1,6 +1,6 @@
 {
   "name": "@rshiner/react-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -21,7 +21,8 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "release": "npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
