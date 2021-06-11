@@ -9,7 +9,6 @@
     "build"
   ],
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10"
@@ -55,20 +54,18 @@
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/node-logger": "^6.2.9",
-    "@storybook/preset-create-react￼ Thanks for using Material-UI!
-
-    We use GitHub issues exclusively as a bug and feature requests tracker, however,
-    this issue appears to be a support request.
-    
-    For support, please check out https://material-ui.com/getting-started/support/. Thanks!
-    
-    If you have a question on StackOverflow, you are welcome to link to it here, it might help others.
-    If your issue is subsequently confirmed as a bug, and the report follows the issue template, it can be reopened.al": "^2.2.4",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.2.9",
+    "node-sass": "^6.0.0",
+    "prop-types": "^15.7.2",
+    "rollup": "^2.51.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "storybook-addon-material-ui": "^0.9.0-alpha.24"
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "@material-ui/core": "^4.11.4"
   }
 }
